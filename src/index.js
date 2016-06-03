@@ -43,6 +43,15 @@ export function createActions (actionDefs) {
   return { types, actions }
 }
 
+export function combineActions (actions) {
+  return actions.reduce((combined, next) => {
+    return {
+      types: Object.assign(combined.types, next.types),
+      actions: Object.assign(combined.actions, next.actions)
+    }
+  }, { types: {}, actions: {} })
+}
+
 // TODO: some features planned for later, extracted from a personal project..
 
 // returns a function that takes in a store dispatch method
