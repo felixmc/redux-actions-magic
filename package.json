@@ -1,6 +1,6 @@
 {
   "name": "redux-actions-magic",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "syntax magic for redux actions",
   "main": "lib/index.js",
   "scripts": {
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/felixmc/redux-actions-magic#readme",
   "peerDependencies": {
-    "redux-actions": "^0.10.1"
+    "redux-actions": "^0.12.0"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
